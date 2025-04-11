@@ -1,5 +1,124 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(232, 232, 232);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 800px;
+    width: 1200px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.buttons{
+    height: 95%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.buttons button{
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #fbeee0;
+    border: 2px solid #2e002c;
+    border-radius: 30px;
+    box-shadow: #2e002c 4px 4px 0 0;
+    color: #2e002c;
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+}
+
+.buttons button:active {
+    box-shadow: #2e002c 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+.canvas{
+    background-color: white;
+    height: 99%;
+    width: 75%;
+    margin-right: 4px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1250px){
+    .container{
+        width: 98%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+        width: 99%;
+    }
+
+    .buttons{
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:  10px;
+    }
+    .buttons button{
+        width: 180px;
+    }
+
+    .canvas{
+        height: 80%;
+        width: 99%;
+        margin: 5px 0;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+   .buttons{
+       height: 25%;
+    }
+    .canvas{
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .buttons{
+        height: 35%;
+     }
+     .canvas{
+         height: 65%;
+     }
+ }
