@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przetwarzanie obrazów</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-
 </head>
 <body>
     <div class="container">
         <div class="buttons">
-            <button id="upload-img">1Wgraj obraz</button>
-            <button id="upload-img">1Wgraj obraz</button>
-            <button id="upload-img">1Wgraj obraz</button>
+            <div class="item">
+                <label for="file-upload" class="file-upload">
+                    Wybierz plik
+                </label>
+                <input id="file-upload" type="file" accept=".bmp"/>
+              </div>
+            <input type="button" id="download-img" value="Pobierz obraz" disabled>
+            <input type="button" id="test" value="test">  
         </div>
         <div class="canvas">
             
         </div>
     </div>
 
-    <script src="bootstrap/bootstrap.bundle.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

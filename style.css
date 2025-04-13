@@ -35,7 +35,12 @@ body{
 
 }
 
-.buttons button{
+.item{
+    width: 80%;
+}
+
+
+.buttons input, .buttons label{
     height: 40px;
     width: 80%;
     font-size: 18px;
@@ -53,14 +58,45 @@ body{
     touch-action: manipulation;
 }
 
-.buttons button:hover{
+.buttons input:hover, .item label:hover{
     background-color: #fff;
 }
 
-.buttons button:active {
+.buttons input:active, .item label:active {
     box-shadow: #2e002c 2px 2px 0 0;
     transform: translate(2px, 2px);
+
 }
+
+.buttons input:disabled{
+    background-color: #fbeee05e;
+    cursor:auto;
+}
+
+.buttons input:disabled:hover{
+    background-color: #fbeee05e;
+}
+
+
+.buttons input:disabled:active {
+    background-color: #fbeee05e;
+    box-shadow: #2e002c 4px 4px 0 0;
+    transform: translate(0px, 0px);
+}
+
+.buttons #file-upload {
+    display: none;
+}
+
+.item label{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px
+}
+
+
 
 .canvas{
     background-color: white;
