@@ -16,13 +16,24 @@
                 <input id="file-upload" type="file" accept=".bmp"/>
               </div>
             <input type="button" id="download-img" value="Pobierz obraz" disabled>
-            <input type="button" id="test" value="test">  
+            <input type="button" value="Histogram R" id="hist-R" disabled>  
+            <input type="button" value="Histogram G" id="hist-G" disabled>  
+            <input type="button" value="Histogram B" id="hist-B" disabled>  
+            <input type="button" id="show-img" value="Pokaż obraz" disabled>
+            <!-- -->
+            <input type="button" id="clamping-btn" value="Clampowanie" disabled> 
+            <input type="button" id="normalize-btn" value="Normalizacja" disabled>  
         </div>
         <div class="canvas">
-            
+            <canvas id="myChart" width="750" height="600"></canvas>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    
+    <script type="module" src="app.js"></script>
+    <script type="module" src="JS-elements/histogram.js"></script>
+    <script type="module" src="JS-elements/Histogram-operations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>

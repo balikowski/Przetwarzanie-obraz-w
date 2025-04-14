@@ -104,6 +104,9 @@ body{
     width: 75%;
     margin-right: 4px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1250px){
@@ -137,8 +140,13 @@ body{
         height: 80%;
         width: 99%;
         margin: 5px 0;
+        
     }
     
+}
+
+input.active{
+    transform: translateX(15px);
 }
 
 @media screen and (max-width: 800px){
